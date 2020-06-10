@@ -1,0 +1,42 @@
+* {
+  padding: 5px;
+}
+
+body {
+  background-color: rgb(173, 173, 173);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  margin: 5px;
+}
+
+.container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  background-color: lightcoral;
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 5px;
+}
+
+header,
+footer {
+  background-color: lightyellow;
+}
