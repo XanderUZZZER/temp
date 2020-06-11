@@ -41,3 +41,14 @@ header,
 footer {
   background-color: lightyellow;
 }
+
+header > h2,
+footer > h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h3,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
