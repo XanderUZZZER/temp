@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <button onclick="go()">showCircle(150, 150, 100)</button>
     <header class="card">
         <h2>Header</h2>
     </header>
@@ -50,7 +52,47 @@
     </footer>
 
     <script src="./js/index.js" type="module"></script>
+    <!-- <script src="./js/callbacks.js"></script> -->
+    <!-- <script src="./js/pormices.js"></script> -->
+    <!-- <script src="./js/fetch.js"></script> -->
+    <script>
+        function go() {
+            showCircle(150, 150, 100, div => {
+                div.classList.add('message-ball');
+                div.append("Hello, world!");
+            });
+        }
 
+        function showCircle(cx, cy, radius, callback) {
+            if (document.getElementsByClassName('circle').length != 0) {
+                console.log(document.getElementsByClassName('circle').length);
+                
+                
+                let div = document.getElementsByClassName('circle')[0];
+                console.log(div);
+                div.parentNode.removeChild(div);
+                // document.removeChild(div);
+            }
+            let div = document.createElement('div');
+            div.style.width = 0;
+            div.style.height = 0;
+            div.style.left = cx + 'px';
+            div.style.top = cy + 'px';
+            div.className = 'circle';
+            document.body.append(div);
+
+            setTimeout(() => {
+                div.style.width = radius * 2 + 'px';
+                div.style.height = radius * 2 + 'px';
+
+                //callback(div);
+                 div.addEventListener('transitionend', function handler() {
+                     div.removeEventListener('transitionend', handler);
+                     callback(div);
+                 });
+            });
+        }
+    </script>
 </body>
 
 </html>
