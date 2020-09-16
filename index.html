@@ -2,97 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" http-equiv="Cache-Control" content="width=device-width, initial-scale=1.0, max-age=0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:;base64,=">
+  <title>Document</title>
 </head>
 
 <body>
-
-    <!-- <button onclick="go()">showCircle(150, 150, 100)</button> -->
-    <header class="card">
-        <h2>Header</h2>
-    </header>
-
-    <div class="container card">
-
-        <div class="main-content card">
-
-            <h3>Main content</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita facere saepe reiciendis nulla.
-                Praesentium facilis eaque blanditiis, hic aliquam molestias explicabo at corrupti eos, ad animi ipsa
-                placeat, odit quam?</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae cumque reiciendis natus numquam
-                harum
-                maiores placeat. Placeat possimus repellendus ratione quasi quaerat, necessitatibus quam, ex minus
-                at,
-                dicta dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-        </div>
-
-        <aside class="card">
-
-            <h3>sidebar</h3>
-            <button>btn1</button>
-            <button>btn2</button>
-            <button>btn3</button>
-            <button>btn4</button>
-            <button>btn5</button>
-            <button>btn6</button>
-            <button>btn7</button>
-        </aside>
-
-    </div>
-
-    <footer class="card">
-        <h2>Footer</h2>
-    </footer>
-
-    <script src="./js/tasks.js" type="module"></script>
-    <!-- <script src="./js/callbacks.js"></script> -->
-    <!-- <script src="./js/pormices.js"></script> -->
-    <!-- <script src="./js/fetch.js"></script> -->
-    <!-- <script>
-        function go() {
-            showCircle(150, 150, 100, div => {
-                div.classList.add('message-ball');
-                div.append("Hello, world!");
-            });
-        }
-
-        function showCircle(cx, cy, radius, callback) {
-            if (document.getElementsByClassName('circle').length != 0) {
-                console.log(document.getElementsByClassName('circle').length);
-                
-                
-                let div = document.getElementsByClassName('circle')[0];
-                console.log(div);
-                div.parentNode.removeChild(div);
-                // document.removeChild(div);
-            }
-            let div = document.createElement('div');
-            div.style.width = 0;
-            div.style.height = 0;
-            div.style.left = cx + 'px';
-            div.style.top = cy + 'px';
-            div.className = 'circle';
-            document.body.append(div);
-
-            setTimeout(() => {
-                div.style.width = radius * 2 + 'px';
-                div.style.height = radius * 2 + 'px';
-
-                //callback(div);
-                 div.addEventListener('transitionend', function handler() {
-                     div.removeEventListener('transitionend', handler);
-                     callback(div);
-                 });
-            });
-        }
-    </script> -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

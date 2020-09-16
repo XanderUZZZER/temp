@@ -1,0 +1,1 @@
+const func3 = () => console.log('\'script3.js\' is running');
